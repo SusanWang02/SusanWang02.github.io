@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        #container {
+            width: 700px;
+            height: 200px;
+            background-color: lightgrey;
+            margin: 150px auto;
+        }
+
+        #passwd {
+            width: 200px;
+            height: 30px;
+            margin-left: 30px;
+        }
+
+        button {
+            text-align: center;
+            width: 70px;
+            height: 30px;
+            background-color: beige;
+            margin: 30px;
+        }
+    </style>
+</head>
+<script type="text/javascript">
+    function check() {
+        if (passwd.value == "654321") {
+            window.location.href = 'http://www.surveyform.cn/diaowen/8e3rlv.html'
+        } else {
+            alert("通行码错误")
+        }
+    }
+</script>
+
+<body>
+    <div id="container">
+
+        <p style="font-family: 宋体;font-size:28px">
+            请输入专家通行码：
+        </p>
+        <input type="password" name="passwd" id="passwd" />
+        <button onclick="check()">确定</button>
+
+
+    </div>
+</body>
+
+</html>
